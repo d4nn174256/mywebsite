@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+             body {
+background-image:url(lightorangebg.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+}
+.btn {
+        background-color: #f4511e;
+        border: none;
+        color: #0b0909;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
+        transition: 0.3s;
+        left: 40px;
+      }
+      .btn:hover {opacity: 0.6}
+
+      body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FDBD01;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+ </style>
+  <title>ACHUCUHU'S PET SUPPLIES</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="logoachu.jpg">
+  <link rel="stylesheet" href="lock.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav data-mdb-navbar-init class="navbar navbar-expand-lg navbar-light bg-warning">
+    <!-- Container wrapper -->
+<div class="container-fluid">
+<!-- Navbar brand -->
+<a class="navbar-brand mt-2 mt-lg-0" href="#">
+<img src="achu.jpg" width="40" class="rounded-circle">
+</a>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <a href="index.html">HOME</a>
+      <a href="WEBSITE.html">ABOUT</a>
+      <a href="PRODUCTS.html">PRODUCTS</a>
+      <a href="CONTACT.html">CONTACT</a>
+      <a href="LOGIN.html">LOGIN</a>
+  </div>
+</div>
+</div>
+</nav>
+<a href="DEVELOPER.html" class="button-link">
+          <button class="styled-button">PRESS THIS!</button>
+</a>
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class="active"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="dog2.jpg" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h2 style="text-align: center; font-size: 40px; color: black; font-family:'Times New Roman', Times, serif;">Happiness is a warm puppy.</h2>
+                <p style="text-align:center; font-size: 40px; color: black; font-family:'Times New Roman', Times, serif;">You can tell by the kindness of a dog how a human should be.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="dog3.jpg" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3 style="text-align: center; font-size: 50px; color: black; font-family: 'Times New Roman', Times, serif;">Dogs are our link to paradise.</h3>
+                <p style="text-align: center; font-size: 50px; color: black; font-family: 'Times New Roman', Times, serif;">Be the person your dog thinks you are.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="dog6.jpg" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3 style="text-align: center; font-size: 50px; color: black; font-family: 'Times New Roman', Times, serif;">A dog will teach you unconditional love. If you have that in your life, things won't be too hard.</h3>
+                <p style="text-align: center; font-size: 50px; color: black; font-family: 'Times New Roman', Times, serif;">Everything I know, I learned from dogs.</p>
+            </div>
+          </div>
+            <div class="carousel-item">
+                <img src="dog7.jpg" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                <h3 style="text-align: center; font-size: 50px; color:black; font-family: 'Times New Roman', Times, serif;">A dog is the only thing on earth that loves you more than he loves himself</h3>
+                <p style="text-align: center; font-size: 50px; color: black; font-family: 'Times New Roman', Times, serif;">The average dog is a nicer person than the average person</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+            <img src="dog12.jpg" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3 style="text-align: center; font-size: 50px; color: black; font-family: 'Times New Roman', Times, serif;">In times of joy, all of us wished we possessed a tail we could wag.</h3>
+                <p style="text-align: center; font-size: 50px; color: black; font-family: 'Times New Roman', Times, serif;">Everything I know, I learned from dogs.</p>
+            </div>
+        </div>
+         <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+          </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          </button>
+      </div>
+      <script>
+                function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+      </script>
+    </body>
+</html>

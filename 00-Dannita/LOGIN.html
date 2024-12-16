@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <style>
+          body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FDBD01;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+    </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet" href="stylesheet3.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="icon" type="image/x-icon" href="logoachu.jpg">
+      <title>ACHUCUHU'S PET SUPPLIES</title>
+   </head>
+   <body>
+    <nav data-mdb-navbar-init class="navbar navbar-expand-lg navbar-light bg-warning">
+      <!-- Container wrapper -->
+  <div class="container-fluid">
+  <!-- Navbar brand -->
+  <a class="navbar-brand mt-2 mt-lg-0" href="#">
+  <img src="achu.jpg" width="40" class="rounded-circle">
+  </a>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="WEBSITE.html">ABOUT</a>
+        <a href="PRODUCTS.html">PRODUCTS</a>
+        <a href="CONTACT.html">CONTACT</a>
+        <a href="LOGIN.html">LOGIN</a>
+        
+    </div>
+  </div>
+  </div>
+  </nav>
+      <div class="login">
+         <img src="dog4.jpg" alt="login image" class="login__img">
+
+         <form action="" class="login__form">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__content">
+               <div class="login__box">
+                  <i class="ri-user-3-line login__icon"></i>
+
+                  <div class="login__box-input">
+                     <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                     <label for="login-email" class="login__label">Email</label>
+                  </div>
+               </div>
+
+               <div class="login__box">
+                  <i class="ri-lock-2-line login__icon"></i>
+
+                  <div class="login__box-input">
+                     <input type="password" required class="login__input" id="login-pass" placeholder=" ">
+                     <label for="login-pass" class="login__label">Password</label>
+                     <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-group">
+                  <input type="checkbox" class="login__check-input" id="login-check">
+                  <label for="login-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <p class="login__register">
+               Don't have an account? <a href="#">Register</a>
+            </p>
+         </form>
+      </div>
+      <script src="ASSERT.js"></script>
+  
+   </body>
+</html>
